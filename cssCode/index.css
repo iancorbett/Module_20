@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(71, 58, 58), rgb(141, 107, 107), rgb(119, 119, 144));
+}
+
+.ian-portfolio {
+    display: flex;
+    color: gold;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: none;
+    justify-content: center;
+    
+}
+
+.newest-project {
+    margin-left: 10%;
+    color: gold;
+    font-size: 24px;
+    border: 3px solid silver;
+    display: inline-block;
+    margin-bottom: -15%;
+    background-color: blueviolet;
+}
+
+.np-link {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.go-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 2px solid silver;
+    background-color: purple;
+    color: white;
+    margin-top: 10px;
+}
+
+.go-button:hover {
+    cursor: pointer;
+}
+
+.go-button:active {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+
+.github-link {
+    float: right;
+    margin-right: 10%;
+    color: gold;
+    font-size: 24px;
+    border: 3px solid silver;
+    margin-bottom: -15%;
+    background-color: blueviolet;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* Added padding to each side to make it symmetrical with the newest project link */
+
+.gh-link-div {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav {
+    float: right;
+}
+
+a {
+    color: violet;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+.h1 {
+    color: rgb(136, 218, 124);
+    display: flex;
+    justify-content: center;
+}
+
+.selfie {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid gold;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.p1 {
+    color: rgb(225, 206, 212);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18px;
+    border: 3px dotted gold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.main-project {
+    background-image: url(../240_F_513743396_oal2KlIug5x3cGGjdRQe0HFXreUG4Bhk.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 100px;
+    color: gold;
+    border: 5px solid gold;
+}
+
+.project-link {
+    display: block;
+    margin-left: 42%;
+    height: 150px;
+    width: 150px;
+    margin-top: 15%;
+    border-radius: 75px;
+    background: conic-gradient(rgb(132,36, 97),rgb(203, 35, 164),rgb(130, 130, 215), 
+    rgb(48, 106, 109), rgb(132, 36, 97));
+    border: 3px solid gold;
+    font-size: 20px;
+    color: gold;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    cursor: pointer;
+}
+
+.project-link:active {
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    
+}
+
+.all-projects {
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    height: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(25, 20, 75);
+    color: #ffffff;
+    border: 3px solid gold;
+    background-image: url(../360_F_766086304_WWKqEbtCzH8rpCLQkRjf2emVD6TJ0oyJ.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 50px;
+}
+
+.all-projects:hover {
+    cursor: pointer;
+}
+
+.wrapper  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contactButtonDiv {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.contactButton {
+    height: 30px;
+    width: 120px;
+    color: gold;
+    background-color: black;
+    border: 2px solid gold;
+    cursor: pointer;
+}
+/* Adding media queries to make everything resize better */
+
+@media screen and (max-width: 1800px) {
+    .all-projects {
+        font-size: 40px;
+    }
+
+    .main-project {
+        font-size: 80px;
+    }
+}
+
+@media  screen and (max-width: 1600px) {
+    a {
+        font-size: 24px
+    }
+}
+
+@media  screen and (max-width: 1350px) {
+    a {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .all-projects {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    #about-me {
+        margin-top: 50px;
+    }    
+
+    .github-link {
+        margin-top: 150px;
+        float: left;
+        margin-left: 10%;
+    }
+
+    .newest-project {
+        float: left;
+        
+    }
+
+    #about-me {
+        margin-top: 275px;
+    }
+}
+
+
+@media  screen and (max-width: 1150px) {
+    a {
+        font-size: 16px;
+    }
+}
+
+    
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .all-projects {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+}
